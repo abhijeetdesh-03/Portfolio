@@ -29,7 +29,8 @@ body {
 
 .hero-section {
     background: var(--main-bg-gradient);
-    height: 100vh;
+    min-height: 100vh;
+    min-height: 100dvh;
 }
 
 .avatar {
@@ -160,7 +161,8 @@ body {
 /* ─── Tablet (≤ 768px) ─────────────────────────────────────────── */
 @media (max-width: 768px) {
     .hero-section {
-        height: auto;
+        min-height: 100vh;
+        min-height: 100dvh;
         padding: 3rem 1rem;
     }
 
