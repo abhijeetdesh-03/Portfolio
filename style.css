@@ -1,5 +1,6 @@
 :root {
     --main-bg-gradient: linear-gradient(90deg, #10172c 20%, #4c1979 80%);
+    --skills-bg-gradient: linear-gradient(90deg, #421b6c 20%, #211a40 80%);
     --sub-heading: #926eb7;
     --badge: #155dfc;
 
@@ -166,12 +167,13 @@ body {
     width: 100vw;
     height: fit-content;
     background-color: black;
+    padding: 1rem;
 }
 
 .custom-card {
     border-radius: 15px;
     overflow: hidden;
-    background: #111;
+    background: #fff;
     color: #ccc;
     transition: 0.3s;
 }
@@ -220,6 +222,77 @@ body {
 
 .links a:hover {
     text-decoration: underline;
+}
+
+.skills-section {
+    width: 100vw;
+    height: fit-content;
+    background: var(--skills-bg-gradient);
+    padding: 1rem;
+}
+
+.skill-section {
+    padding: 50px 20px;
+}
+
+.skill-card {
+    background: #e5e5e5;
+    border-radius: 20px;
+    padding: 30px;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+/* Gradient icons */
+.blue {
+    background: linear-gradient(135deg, #3b82f6, #06b6d4);
+}
+
+.green {
+    background: linear-gradient(135deg, #22c55e, #10b981);
+}
+
+.pink {
+    background: linear-gradient(135deg, #a855f7, #ec4899);
+}
+
+.orange {
+    background: linear-gradient(135deg, #f97316, #ef4444);
+}
+
+.yellow {
+    background: linear-gradient(135deg, #f59e0b, #f97316);
+}
+
+.purple {
+    background: linear-gradient(135deg, #6366f1, #a855f7);
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 25px;
+}
+
+.skills span {
+    color: #9ca3af;
+    font-size: 14px;
 }
 
 /* ─── Tablet (≤ 768px) ─────────────────────────────────────────── */
