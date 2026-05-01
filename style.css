@@ -1,5 +1,5 @@
 :root {
-    --main-bg-gradient: linear-gradient(135deg, #10172c 35%, #4c1979 65%);
+    --main-bg-gradient: linear-gradient(90deg, #10172c 20%, #4c1979 80%);
     --sub-heading: #926eb7;
     --badge: #155dfc;
 
@@ -69,6 +69,11 @@ body {
     vertical-align: middle;
 }
 
+.btn-work:hover {
+    box-shadow: 0 8px 20px rgba(174, 70, 255, 0.6);
+    transform: translateY(-2px);
+}
+
 .slash {
     font-size: 2rem;
     color: white;
@@ -88,7 +93,7 @@ body {
     }
 
     50% {
-        transform: translateY(-6px);
+        transform: translateY(-10px);
         opacity: 1;
     }
 
@@ -109,3 +114,142 @@ body {
     cursor: pointer;
     transition: all 0.3s ease;
 }
+
+.btn-touch:hover {
+    background-color: white;
+    color: #10172c;
+}
+
+.text-center {
+    font-size: 48px;
+    color: #fff;
+}
+
+.sub-text-center {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 35px;
+    color: var(--sub-heading);
+}
+
+.sub-text-context {
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    color: #d1b3f0;
+    font-size: 20px;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+.btn {
+    width: 50px;
+    height: 50px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* ─── Tablet (≤ 768px) ─────────────────────────────────────────── */
+@media (max-width: 768px) {
+    .hero-section {
+        height: auto;
+        padding: 3rem 1rem;
+    }
+
+    .avatar {
+        width: 120px;
+        height: 120px;
+        font-size: 36px;
+        margin: 0 auto;
+    }
+
+    .text-center {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .sub-text-center {
+        font-size: 26px;
+    }
+
+    .sub-text-context {
+        width: 85%;
+        font-size: 16px;
+    }
+
+    .btn-row {
+        margin: 1rem 0;
+    }
+
+    .btn-work,
+    .btn-touch {
+        font-size: 0.9rem;
+        padding: 0.6rem 1rem;
+    }
+
+    .slash {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        width: 42px;
+        height: 42px;
+        font-size: 20px;
+    }
+}
+
+/* ─── Mobile (≤ 480px) ─────────────────────────────────────────── */
+@media (max-width: 480px) {
+    .hero-section {
+        padding: 2.5rem 0.75rem;
+    }
+
+    .avatar {
+        width: 100px;
+        height: 100px;
+        font-size: 28px;
+    }
+
+    .text-center {
+        font-size: 28px;
+    }
+
+    .sub-text-center {
+        font-size: 20px;
+    }
+
+    .sub-text-context {
+        width: 95%;
+        font-size: 14px;
+    }
+
+    .btn-wrapper {
+        flex-wrap: wrap;
+        gap: 0.75rem !important;
+    }
+
+    .btn-work,
+    .btn-touch {
+        width: 100%;
+        justify-content: center;
+        font-size: 0.85rem;
+    }
+
+    .slash {
+        display: none;
+    }
+
+    .btn {
+        width: 38px;
+        height: 38px;
+        font-size: 18px;
+    }
+}
